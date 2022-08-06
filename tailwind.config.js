@@ -6,7 +6,17 @@ module.exports = {
     './content/**/*.md'
   ],
   theme: {
-    extend: {},
+    extend: {
+      container:{
+        center: true,
+        padding: {
+          DEFAULT: '1rem',
+        }
+      },
+      backgroundImage: {
+        'home-intro' : "url('/assets/img/bg/home-intro-bg.jpg')",
+      },
+    },
   },
   plugins: [
     require('@tailwindcss/typography'),

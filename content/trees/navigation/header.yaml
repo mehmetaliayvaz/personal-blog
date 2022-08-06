@@ -1,0 +1,17 @@
+tree:
+  -
+    id: ad40e124-d27e-4d3d-b1f7-e26d0c26ded2
+    title: 'Ana Sayfa'
+    url: /
+  -
+    id: 75f1e729-3056-4cda-bee1-71e640b45ca3
+    title: Blog
+    url: /blog
+  -
+    id: c718cc1e-c24e-448f-a4c4-5467bd9e8316
+    title: Fotoğraf
+    url: /fotograf
+  -
+    id: bc5a869e-c24b-41b4-8f16-f9d2d9b4bcec
+    title: 'Hakkımda & İletişim'
+    url: /hakkimda-iletisim
