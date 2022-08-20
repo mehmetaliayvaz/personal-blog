@@ -6,6 +6,13 @@ module.exports = {
     './content/**/*.md'
   ],
   theme: {
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+      'lg': '992px',
+      'xl': '1080px',
+      '2xl': '1170px'
+    },
     extend: {
       container:{
         center: true,
@@ -16,6 +23,12 @@ module.exports = {
       backgroundImage: {
         'home-intro' : "url('/assets/img/bg/home-intro-bg.jpg')",
       },
+      fontFamily: {
+        'roboto': ['Roboto', 'sans-serif'],
+      },
+      boxShadow: {
+        'base': '0 16px 38px -12px rgb(0 0 0 / 56%), 0 4px 25px 0 rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(0 0 0 / 20%);',
+      }
     },
   },
   plugins: [

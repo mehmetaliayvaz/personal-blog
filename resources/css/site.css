@@ -1,1 +1,17 @@
-/* This is all you. */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+  @apply font-roboto;
+}
+
+.btn-primary{
+  @apply px-10 py-3 font-medium text-white bg-red-600 rounded;
+}
+
+.btn-secondary{
+  @apply px-10 py-3 font-medium text-white bg-pink-600 rounded;
+}
+
+.base-input{
+  @apply w-full text-gray-500 placeholder-gray-300 border-b border-gray-300 focus:outline-0;
+}
