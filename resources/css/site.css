@@ -6,11 +6,29 @@
 }
 
 .btn-primary{
-  @apply px-10 py-3 font-medium text-white bg-red-600 rounded;
+  @apply px-10 py-3 font-medium text-white rounded;
+  background-color: var(--primary-color);
 }
 
 .btn-secondary{
-  @apply px-10 py-3 font-medium text-white bg-pink-600 rounded;
+  @apply px-10 py-3 font-medium text-white rounded;
+  background-color: var(--secondary-color);
+}
+
+.bg-primary{
+  background-color: var(--primary-color);
+}
+
+.bg-secondary{
+  background-color: var(--secondary-color);
+}
+
+.text-primary{
+  color: var(--primary-color);
+}
+
+.text-secondary{
+  color: var(--secondary-color);
 }
 
 .base-input{

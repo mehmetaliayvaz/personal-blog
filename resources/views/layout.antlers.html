@@ -5,12 +5,20 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ title ?? site:name }}</title>
+        <style>
+            :root {
+                --primary-color: {{ color }} {{ primary_color }} {{ /color }};
+                --secondary-color: {{ color }} {{ secondary_color }} {{ /color }};
+            }
+        </style>
         <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
     </head>
+
     <body class="font-sans leading-normal text-gray-800 bg-gray-100">
         {{ partial:components/header }}
         {{ template_content }}
         {{ partial:components/footer }}
         <script src="{{ mix src='/js/site.js' }}"></script>
     </body>
+    
 </html>
