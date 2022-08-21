@@ -1,3 +1,26 @@
+{{ form:iletisim }}
+
+{{ if success }}
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.1/dist/sweetalert2.all.min.js"></script>
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.1/dist/sweetalert2.min.css"
+/>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        Swal.fire({
+            title: "Teşekkürler",
+            icon: "success",
+            html: "Mesajınız bize ulaştı.",
+            showCloseButton: true,
+            focusConfirm: true,
+            confirmButtonText: "Kapat",
+            confirmButtonAriaLabel: "Kapat",
+        });
+});
+</script>
+{{ /if }}
+
 <section id="home-contact" class="relative bg-center bg-no-repeat bg-cover" style="background-image: url('{{ background }}')">
   <div class="bg-black-layer z-[1]"></div>
   <div class="container relative z-[2]">
@@ -12,19 +35,21 @@
           </div>
           <div class="mb-10">
             <div class="flex mb-10 space-x-5">
-              <input type="text" class="base-input" placeholder="İsim">
-              <input type="text" class="base-input" placeholder="Soyisim">
+              <input type="text" class="base-input" placeholder="İsim" name="form_name" id="form_name" required>
+              <input type="text" class="base-input" placeholder="Soyisim" name="form_surname" id="form_surname" required>
             </div>
             <div class="space-y-10">
-              <input type="text" class="base-input" placeholder="Konu">
-              <textarea class="base-input h-[100px] resize-none" placeholder="Mesaj"></textarea>
+              <input type="email" class="base-input" placeholder="Email" name="form_email" id="form_email" required>
+              <textarea class="base-input h-[100px] resize-none" placeholder="Mesaj" name="form_message" id="form_message" required></textarea>
             </div>
           </div>
           <div class="flex justify-end">
-            <button class="btn-secondary">Gönder</button>
+            <input type="text" class="hidden" name="honeypot" id="honeypot" class="honeypot" />
+            <button class="btn-secondary" type="submit">Gönder</button>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+{{ /form:iletisim }}

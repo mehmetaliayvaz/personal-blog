@@ -1,0 +1,47 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: form_name
+        field:
+          input_type: text
+          antlers: false
+          display: 'Form Name'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: form_surname
+        field:
+          input_type: text
+          antlers: false
+          display: 'Form Surname'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: form_email
+        field:
+          input_type: text
+          antlers: false
+          display: 'Form Email'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: form_message
+        field:
+          antlers: false
+          display: 'Form Message'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible
