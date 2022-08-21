@@ -1,0 +1,26 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: left_text
+        field:
+          input_type: text
+          antlers: false
+          display: 'Left Text'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: right_text
+        field:
+          input_type: text
+          antlers: false
+          display: 'Right Text'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible

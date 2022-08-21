@@ -2,10 +2,18 @@
   <div class="container">
     <div class="flex justify-between py-10">
       <div>
-        <p class="font-light text-white">Bu websitenin kaynak kodlarına <a href="#">buradan</a> ulaşabirsiniz.</p>
+        <p class="font-light text-white">
+          {{ footer }}
+            {{ left_text }}
+          {{ /footer }}
+        </p>
       </div>
       <div>
-        <p class="text-white">Tüm Hakları Saklıdır © 2022 mehmetaliayvaz.com</p>
+        <p class="text-white">
+          {{ footer }}
+            {{ right_text }}
+          {{ /footer }}
+        </p>
       </div>
     </div>
   </div>

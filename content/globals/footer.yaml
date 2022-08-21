@@ -1,0 +1,4 @@
+title: Footer
+data:
+  left_text: 'Bu websitenin kaynak kodlarına <a href="https://github.com/mehmetaliayvaz/personal-blog" target="blank" style="font-weight: 500;">buradan</a> ulaşabirsiniz.'
+  right_text: 'Tüm Hakları Saklıdır © 2022 mehmetaliayvaz.com'

@@ -5,7 +5,7 @@ title: Home
 template: template/home
 author: a253c262-369b-4372-99d7-40e0989db330
 updated_by: a253c262-369b-4372-99d7-40e0989db330
-updated_at: 1661086201
+updated_at: 1661088443
 replicator_field:
   -
     title: 'Mehmet Ali Ayvaz'
@@ -57,7 +57,7 @@ replicator_field:
     background: img/bg/bg-2.jpg
 page_content:
   -
-    title: 'Mehmet Ali Ayvaz'
+    title: 'Kişisel Blog'
     background: img/bg/bg-1.jpg
     button_text: Hakkımda
     button_link: 'entry::b55f66eb-0a3b-40fc-9e8a-9464f99835aa'
@@ -65,6 +65,7 @@ page_content:
     type: page_content
     enabled: true
     section_template: components/home-intro
+    description: 'Bu websitenin kaynak kodlarına <a href="https://github.com/mehmetaliayvaz/personal-blog" target="blank" style="font-weight: 600;">buraya </a> tıklayarak ulaşabilirsiniz.'
   -
     title: Blog
     button_text: 'Tümünü Gör'
@@ -73,6 +74,7 @@ page_content:
     type: page_content
     enabled: true
     section_template: components/home-blog
+    description: 'Son Yazılar'
   -
     title: Fotoğraflar
     description: 'Hobi olarak fotoğrafçılıkla uğraşıyorum. Tümünü gör diyerek çektiğim tüm fotoğraflara ulaşabilirsiniz.'
