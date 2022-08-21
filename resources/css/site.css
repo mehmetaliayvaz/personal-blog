@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
+
 * {
   @apply font-roboto;
 }
@@ -22,4 +23,23 @@
 
 .page-content p, .page-content img{
   @apply mb-4 ;
+}
+
+.pagination .pagination-item{
+  @apply m-1 text-sm text-white bg-red-300 rounded cursor-pointer hover:bg-red-500;
+}
+
+.pagination .pagination-item a, .pagination .pagination-item span{
+  @apply flex px-3 py-1;
+}
+
+.pagination .active{
+  @apply bg-red-500;
+}
+  
+.line-clamp-2{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }

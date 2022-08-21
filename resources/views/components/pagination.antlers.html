@@ -1,0 +1,29 @@
+{{ paginate }}
+<ul class="flex pagination">
+    {{ if prev_page }}
+    <li class="pagination-item"><a href="{{ prev_page }}">&laquo;</a></li>
+    {{ else }}
+    <li class="disabled pagination-item"><span>&laquo;</span></li>
+    {{ /if }} {{ links:segments }} {{ first }} {{ if page == current_page }}
+    <li class="active pagination-item"><span>{{ page }}</span></li>
+    {{ else }}
+    <li class="pagination-item"><a href="{{ url }}">{{ page }}</a></li>
+    {{ /if }} {{ /first }} {{ if slider }}
+    <li class="disabled pagination-item"><span>...</span></li>
+    {{ /if }} {{ slider }} {{ if page == current_page }}
+    <li class="active pagination-item"><span>{{ page }}</span></li>
+    {{ else }}
+    <li class="pagination-item"><a href="{{ url }}">{{ page }}</a></li>
+    {{ /if }} {{ /slider }} {{ if slider || (!slider && last) }}
+    <li class="disabled pagination-item"><span>...</span></li>
+    {{ /if }} {{ last }} {{ if page == current_page }}
+    <li class="active pagination-item"><span>{{ page }}</span></li>
+    {{ else }}
+    <li class="pagination-item"><a href="{{ url }}">{{ page }}</a></li>
+    {{ /if }} {{ /last }} {{ /links:segments }} {{ if next_page }}
+    <li class="pagination-item"><a href="{{ next_page }}">&raquo;</a></li>
+    {{ else }}
+    <li class="disabled pagination-item"><span>&raquo;</span></li>
+    {{ /if }}
+</ul>
+{{ /paginate }}

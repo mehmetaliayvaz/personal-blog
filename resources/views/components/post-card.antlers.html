@@ -1,18 +1,16 @@
 <div>
-  <a href="#">
+  <a href="{{ slug }}">
     <div class="w-full mb-5 h-[200px]">
-      <img src="/assets/img/card/card-default.png" class="object-cover w-full h-full rounded shadow-base">
+      <img src="{{ thumbnail }}" class="object-cover w-full h-full rounded shadow-base">
     </div>
   </a>
   <div>
     <span class="mb-5 text-sm font-medium text-orange-700 uppercase">Projelerim</span>
-    <a href="#">
-      <h3 class="mb-5 text-xl font-semibold">İçimizdeki Fitili Ateşlemek</h3>
+    <a href="{{ slug }}">
+      <h3 class="mb-5 text-xl font-semibold line-clamp-2">{{ title }}</h3>
     </a>
     <p class="font-light">
-      İnsanoğlu yaşadığı her devirde içinde bulunduğu medeniyete yararlı veya zararlı olarak katkıda bulunmuştur. 
-      “Yararlı” kavramı için bazı olaylar kafamızda canlanabilir, peki bir insan medeniyete nasıl zarar verebilir? 
-      Bu konuyu irdeleyip düşününce bir çok sebep bulunabilir.
+      {{ description }}
     </p>
   </div>
 </div>
