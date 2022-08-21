@@ -1,18 +1,28 @@
-<section id="header" class="fixed top-0 z-10 w-full py-10">
+<section id="header" class="fixed top-0 z-10 w-full py-3 bg-white md:bg-transparent md:py-10">
   <div class="container">
-    <div class="flex justify-between">
+    <div class="flex items-center justify-between">
       <div>
-        <h1 class="text-white">
+        <a href="/" class="font-medium md:text-lg md:text-white">
           {{ site_title }}
             {{ site_title }}
           {{ /site_title }}
-        </h1>
+        </a>
       </div>
-      <div>
+      <div class="hidden md:block">
         {{ nav:header }}
         <a href="{{ url }}" class="p-3 text-white whitespace-nowrap">{{ title }}</a>
         {{ /nav:header }}
       </div>
+      <button id="icon-menu" class="md:hidden">
+        <svg width="16" height="16" viewBox="0 0 20 20">
+          <path d="M0 3h20v2h-20v-2zM0 9h20v2h-20v-2zM0 15h20v2h-20v-2z"></path>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-nav" class="hidden md:hidden">
+      {{ nav:header }}
+      <a href="{{ url }}" class="block p-3 text-sm font-medium text-center border-b border-gray-200">{{ title }}</a>
+      {{ /nav:header }}
     </div>
   </div>
 </section>
