@@ -1,0 +1,14 @@
+<div id="photo-view" class="fixed hidden justify-center items-center top-0 left-0 w-full h-full z-[101]">
+  <button id="photo-view-bg" class="absolute top-0 left-0 w-full h-full bg-gray-900 opacity-60 z-[102]"></button>
+  <div class="relative z-[103] max-w-[60vw] w-full h-auto">
+    <div class="swiper photo-view">
+      <div class="swiper-wrapper">
+        {{ galery }}
+          <div class="swiper-slide">
+            <img src="{{ url }}" class="object-cover">
+          </div>
+        {{ /galery }}
+      </div>
+    </div>
+  </div>
+</div>

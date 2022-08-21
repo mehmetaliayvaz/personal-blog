@@ -9,25 +9,22 @@
           {{ description }}
         </h3>
       </div>
-      <div class="mb-10">
-        <div class="grid grid-cols-1 gap-10 mb-10 md:grid-cols-2 lg:grid-cols-3">
-          {{ galery }}
-          {{ if index < 3 }}
-          <div class="w-full h-[200px]">
-            <img src="{{ url }}" class="object-cover w-full h-full rounded shadow-base">
-          </div>
-          {{ /if }}
-          {{ /galery }}
-        </div>
-        <div class="grid grid-cols-1 gap-10 md:grid-cols-2">
-          {{ galery }}
-          {{ if index < 5 && index > 2 }}
-          <div class="w-full h-[200px] md:h-[250px]">
-            <img src="{{ url }}" class="object-cover w-full h-full rounded shadow-base">
-          </div>
-          {{ /if }}
-          {{ /galery }}
-        </div>
+      <div class="flex flex-wrap justify-between">
+        {{ galery }}
+        {{ if index < 3 }}
+        <button class="w-full md:w-[32%] h-[200px] galery-photo mb-8">
+          <img src="{{ url }}" class="object-cover w-full h-full rounded shadow-base">
+        </button>
+        {{ /if }}
+        {{ /galery }}
+
+        {{ galery }}
+        {{ if index < 5 && index > 2 }}
+        <button class="w-full md:w-[49%] h-[200px] md:h-[250px] galery-photo mb-8 md:mb-12">
+          <img src="{{ url }}" class="object-cover w-full h-full rounded shadow-base">
+        </button>
+        {{ /if }}
+        {{ /galery }}
       </div>
       <div class="flex justify-center">
         <a href="{{ button_link }}" class="btn-primary">Tümünü Gör</a>
@@ -35,3 +32,5 @@
     </div>
   </div>
 </section>
+
+{{ partial:components/photo-view }}

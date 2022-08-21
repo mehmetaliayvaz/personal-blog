@@ -5,7 +5,7 @@ title: Home
 template: template/home
 author: a253c262-369b-4372-99d7-40e0989db330
 updated_by: a253c262-369b-4372-99d7-40e0989db330
-updated_at: 1661088443
+updated_at: 1661111097
 replicator_field:
   -
     title: 'Mehmet Ali Ayvaz'
@@ -77,7 +77,7 @@ page_content:
     description: 'Son Yazılar'
   -
     title: Fotoğraflar
-    description: 'Hobi olarak fotoğrafçılıkla uğraşıyorum. Tümünü gör diyerek çektiğim tüm fotoğraflara ulaşabilirsiniz.'
+    description: 'Örnek Fotolar'
     galery:
       - img/article/default-1.png
       - img/article/default-2.png
@@ -94,16 +94,61 @@ page_content:
     background: img/bg/bg-2.jpg
     content: |-
       <h2 class="mb-5 text-3xl font-semibold text-white">Sosyal Medya</h2>
-      <ul class="font-light text-white">
-        <li><a href="#" target="blank">github.com/mehmetaliayvaz</a></li>
-        <li><a href="#" target="blank">linkedin.com/in/mehmetaliayvaz</a></li>
-        <li><a href="#" target="blank">medium.com/@mehmetaliayvaz</a></li>
-        <li><a href="#" target="blank">instagram.com/mhmtaliayvaz</a></li>
-        <li><a href="#" target="blank">twitter.com/mhmtaliayvaz</a></li>
-        <li><a href="#" target="blank">youtube.com/mehmetaliayvaz</a></li>
-        <li><a href="#" target="blank">pexels.com/@mehmetaliayvaz</a></li>
-        <li><a href="#" target="blank">instagram.com/siyahdiyafram</a></li>
-        <li><a href="#" target="blank">mehmetaliayvaz61@gmail.com</a></li>
+      <ul class="font-light text-white pl-5 space-y-1">
+        <li>
+          <a href="https://github.com/mehmetaliayvaz" target="blank">
+            <i class="fa-brands fa-github"></i>
+            <span>/mehmetaliayvaz</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/in/mehmetaliayvaz" target="blank">
+            <i class="fa-brands fa-linkedin"></i>
+            <span>/mehmetaliayvaz</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://medium.com/@mehmetaliayvaz" target="blank">
+            <i class="fa-brands fa-medium"></i>
+            <span>/@mehmetaliayvaz</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://instagram.com/mhmtaliayvaz" target="blank">
+            <i class="fa-brands fa-instagram"></i>
+            <span>/mhmtaliayvaz</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/mhmtaliayvaz" target="blank">
+            <i class="fa-brands fa-twitter"></i>
+            <span>/mhmtaliayvaz</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://youtube.com/mehmetaliayvaz" target="blank">
+            <i class="fa-brands fa-youtube"></i>
+            <span>/mehmetaliayvaz</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://pexels.com/@mehmetaliayvaz" target="blank">
+            <i class="fa-solid fa-camera"></i>
+            <span>/mehmetaliayvaz</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://instagram.com/siyahdiyafram" target="blank">
+            <i class="fa-brands fa-instagram"></i>
+            <span>/siyahdiyafram</span>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:mehmetaliayvaz61@gmail.com" target="blank">
+            <i class="fa-solid fa-envelope"></i>
+            <span>mehmetaliayvaz61@gmail.com</span>
+          </a>
+        </li>
       </ul>
     template: components/home-contact
     type: page_content
