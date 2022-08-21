@@ -21,7 +21,6 @@ module.exports = {
         }
       },
       backgroundImage: {
-        'home-intro' : "url('/assets/img/bg/home-intro-bg.jpg')",
       },
       fontFamily: {
         'roboto': ['Roboto', 'sans-serif'],

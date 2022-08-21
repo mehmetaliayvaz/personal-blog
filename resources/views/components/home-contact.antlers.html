@@ -1,0 +1,29 @@
+<section id="home-contact" class="bg-center bg-no-repeat bg-cover" style="background-image: url('{{ background }}')">
+  <div class="container">
+    <div class="flex items-center py-40">
+      <div class="w-1/2">
+        {{ content }}
+      </div>
+      <div class="flex justify-center w-1/2">
+        <div class="w-10/12 p-10 bg-white rounded shadow-base">
+          <div class="w-full py-4 text-center bg-pink-600 rounded mt-[-60px] mb-10">
+            <span class="text-lg font-medium text-white">İletişime Geç</span>
+          </div>
+          <div class="mb-10">
+            <div class="flex mb-5 space-x-5">
+              <input type="text" class="base-input" placeholder="İsim">
+              <input type="text" class="base-input" placeholder="Soyisim">
+            </div>
+            <div class="space-y-5">
+              <input type="text" class="base-input" placeholder="Konu">
+              <textarea class="base-input h-[100px] resize-none" placeholder="Mesaj"></textarea>
+            </div>
+          </div>
+          <div class="flex justify-end">
+            <button class="btn-secondary">Gönder</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

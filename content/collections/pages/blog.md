@@ -4,7 +4,8 @@ blueprint: pages
 title: Blog
 author: a253c262-369b-4372-99d7-40e0989db330
 template: template/blog
-published: true
 updated_by: a253c262-369b-4372-99d7-40e0989db330
-updated_at: 1661078787
+updated_at: 1661083406
+thumbnail: img/article/default-2.png
+published: true
 ---
