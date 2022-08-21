@@ -6,12 +6,12 @@
 }
 
 .btn-primary{
-  @apply px-10 py-3 font-medium text-white rounded;
+  @apply px-10 py-2 text-sm font-medium text-white rounded md:text-base md:py-3;
   background-color: var(--primary-color);
 }
 
 .btn-secondary{
-  @apply px-10 py-3 font-medium text-white rounded;
+  @apply px-10 py-2 text-sm font-medium text-white rounded md:text-base md:py-3;
   background-color: var(--secondary-color);
 }
 
