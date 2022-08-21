@@ -1,0 +1,17 @@
+<div id="blog">
+
+  {{ partial:components/page-intro }}
+
+  <section class="px-10">
+    <div class="p-20 shadow-base mt-[-50px] relative z-[4] min-h-[60vh] rounded bg-white">
+      <div class="container">
+        <div class="grid grid-cols-1 mb-10 gap-x-10 gap-y-16 md:grid-cols-2 lg:grid-cols-3">
+          {{ loop times="9" }}
+            {{ partial:components/post-card }}
+          {{ /loop }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
