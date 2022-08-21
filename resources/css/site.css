@@ -15,3 +15,7 @@
 .base-input{
   @apply w-full text-gray-500 placeholder-gray-300 border-b border-gray-300 focus:outline-0;
 }
+
+.page-content p, .page-content img{
+  @apply mb-4;
+}

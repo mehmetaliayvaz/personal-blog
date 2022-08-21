@@ -1,0 +1,36 @@
+<div>
+
+  <section class="relative">
+    <div class="absolute z-[1] bg-center bg-no-repeat bg-cover bg-home-intro h-full w-full"></div>
+    <div class="absolute w-full h-full bg-black opacity-40 top-0 left-0 z-[2]"></div>
+    <div class="relative z-[3] container">
+      <div class="h-[35vh] flex items-center justify-center">
+        <h1 class="text-4xl font-semibold text-white">Fotoğraf</h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="px-10">
+    <div class="p-20 shadow-base mt-[-50px] relative z-[4] min-h-[60vh] rounded bg-white">
+      <div class="max-w-[800px] w-full mx-auto text-lg text-gray-500 font-light page-content mb-10">
+        <p>
+          Hobi olarak fotoğrafçılıkla uğraşmaktayım. Çektiğim fotoğraflar arasından bazılarını bu sayfada derledim. 
+          Daha fazla fotoğraflara ve yüksek çözünürlüklü hallerini görmek için pexels hesabımı ziyaret edebilirsiniz.
+        </p>
+        <p>
+          Aktif olarak paylaştığım fotoğrafları görmek isterseniz Siyah Diyafram İnstagram sayfamı takip edebilirsiniz.
+        </p>
+      </div>
+      <div class="max-w-[800px] w-full mx-auto">
+        <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3">
+          {{ loop times="10" }}
+          <div class="w-full h-[150px]">
+            <img src="/assets/img/card/card-default.png" class="object-cover w-full h-full rounded shadow-base">
+          </div>
+          {{ /loop }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
