@@ -2,14 +2,14 @@
 
   {{ partial:components/page-intro }}
 
-  <section class="px-10">
-    <div class="p-20 shadow-base mt-[-50px] relative z-[4] min-h-[60vh] rounded bg-white">
+  <section class="md:px-10">
+    <div class="page-card">
       <div class="container">
         <div>
           <div class="page-content">
             {{ content }}
           </div>
-          <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3">
+          <div class="grid grid-cols-1 gap-5 md:gap-10 sm:grid-cols-2 md:grid-cols-3">
             {{ galery }}
             <div class="w-full h-[200px]">
               <img src="{{ url }}" class="object-cover w-full h-full rounded shadow-base">

@@ -58,7 +58,17 @@
 .bg-black-layer{
   @apply absolute top-0 left-0 w-full h-full bg-black opacity-50;
 }
+
+.page-card{
+  @apply py-10 px-5 md:p-20 shadow-base md:mt-[-50px] relative z-[4] min-h-[60vh] rounded bg-white;
+}
   
+.header-sticky{
+  background-color: #ffffffeb !important;
+  padding: 0.5rem 0 !important;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.055);
+}
+
 .line-clamp-2{
   overflow: hidden;
   display: -webkit-box;

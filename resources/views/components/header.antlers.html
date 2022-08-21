@@ -2,15 +2,15 @@
   <div class="container">
     <div class="flex items-center justify-between">
       <div>
-        <a href="/" class="font-medium md:text-lg md:text-white">
+        <a href="/" id="site-title" class="font-medium md:text-lg md:text-white">
           {{ site_title }}
             {{ site_title }}
           {{ /site_title }}
         </a>
       </div>
-      <div class="hidden md:block">
+      <div id="header-nav" class="hidden text-white md:block">
         {{ nav:header }}
-        <a href="{{ url }}" class="p-3 text-white whitespace-nowrap">{{ title }}</a>
+        <a href="{{ url }}" class="p-3 whitespace-nowrap">{{ title }}</a>
         {{ /nav:header }}
       </div>
       <button id="icon-menu" class="md:hidden">
