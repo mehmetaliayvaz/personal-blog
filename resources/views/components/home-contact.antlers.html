@@ -29,23 +29,25 @@
         {{ content }}
       </div>
       <div class="flex justify-center md:w-1/2">
-        <div class="w-10/12 p-5 bg-white rounded md:p-10 shadow-base">
-          <div class="w-full py-2 md:py-4 text-center bg-secondary rounded mt-[-40px] md:mt-[-70px] mb-10">
-            <span class="text-white md:font-medium md:text-lg">İletişime Geç</span>
-          </div>
-          <div class="mb-10">
-            <div class="flex mb-10 space-x-5">
-              <input type="text" class="base-input" placeholder="İsim" name="form_name" id="form_name" required>
-              <input type="text" class="base-input" placeholder="Soyisim" name="form_surname" id="form_surname" required>
+        <div class="w-10/12 shadow-base">
+          <div class="w-full p-5 bg-[#fff] rounded-b md:p-10">
+            <h5 class="mb-10 text-xl font-medium text-center text-gray-700">
+              İletişime Geç
+            </h5>
+            <div class="mb-10">
+              <div class="flex mb-10 space-x-5">
+                <input type="text" class="base-input" placeholder="İsim" name="form_name" id="form_name" required>
+                <input type="text" class="base-input" placeholder="Soyisim" name="form_surname" id="form_surname" required>
+              </div>
+              <div class="space-y-10">
+                <input type="email" class="base-input" placeholder="Email" name="form_email" id="form_email" required>
+                <textarea class="base-input h-[100px] resize-none" placeholder="Mesaj" name="form_message" id="form_message" required></textarea>
+              </div>
             </div>
-            <div class="space-y-10">
-              <input type="email" class="base-input" placeholder="Email" name="form_email" id="form_email" required>
-              <textarea class="base-input h-[100px] resize-none" placeholder="Mesaj" name="form_message" id="form_message" required></textarea>
+            <div class="flex justify-center">
+              <input type="text" class="hidden" name="honeypot" id="honeypot" class="honeypot" />
+              <button class="btn-secondary" type="submit">Gönder</button>
             </div>
-          </div>
-          <div class="flex justify-end">
-            <input type="text" class="hidden" name="honeypot" id="honeypot" class="honeypot" />
-            <button class="btn-secondary" type="submit">Gönder</button>
           </div>
         </div>
       </div>
