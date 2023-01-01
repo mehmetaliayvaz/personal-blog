@@ -1,11 +1,11 @@
 ---
 id: home
 blueprint: pages
-title: Home
+title: 'Ana Sayfa'
 template: template/home
 author: a253c262-369b-4372-99d7-40e0989db330
 updated_by: a253c262-369b-4372-99d7-40e0989db330
-updated_at: 1661111097
+updated_at: 1672600134
 replicator_field:
   -
     title: 'Mehmet Ali Ayvaz'
