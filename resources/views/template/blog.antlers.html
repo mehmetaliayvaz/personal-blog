@@ -5,7 +5,7 @@
   <section class="md:px-10">
     <div class="page-card">
       <div class="container">
-        {{ collection:blog paginate="9" as="blog" }}
+        {{ collection:blog paginate="9" as="blog" sort="order" }}
           <div class="grid grid-cols-1 mb-10 gap-x-10 gap-y-16 md:grid-cols-2 lg:grid-cols-3">
             {{ blog }}
               {{ partial:components/post-card }}
