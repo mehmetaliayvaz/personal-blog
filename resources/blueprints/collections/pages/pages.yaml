@@ -43,6 +43,17 @@ sections:
           listable: hidden
           instructions_position: above
           visibility: visible
+      -
+        handle: template
+        field:
+          hide_partials: true
+          blueprint: false
+          display: Template
+          type: template
+          icon: template
+          listable: hidden
+          instructions_position: above
+          visibility: visible
   sidebar:
     display: Sidebar
     fields:
